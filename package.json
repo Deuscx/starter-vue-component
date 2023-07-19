@@ -1,6 +1,6 @@
 {
   "name": "@deuscx/starter-vue-component",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "A simple starter template to build component library for vue3",
   "author": "deuscx",
   "license": "MIT",
