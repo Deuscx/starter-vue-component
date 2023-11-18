@@ -11,5 +11,5 @@ export default defineComponent({
 </script>
 
 <template>
-  <CustomComponent />
+  <CustomComponent :initial="0" />
 </template>
