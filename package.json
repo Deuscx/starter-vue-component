@@ -1,5 +1,6 @@
 {
   "name": "@deuscx/starter-vue-component",
+  "type": "module",
   "version": "0.0.1",
   "packageManager": "pnpm@8.10.5",
   "description": "A simple starter template to build component library for vue3",
@@ -18,12 +19,12 @@
   ],
   "exports": {
     ".": {
-      "require": "./dist/index.umd.js",
-      "import": "./dist/index.mjs"
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.umd.js"
     },
     "./dist/style.css": {
-      "require": "./dist/style.css",
-      "import": "./dist/style.css"
+      "import": "./dist/style.css",
+      "require": "./dist/style.css"
     },
     "./*": "./*"
   },
