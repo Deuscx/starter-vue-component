@@ -2,7 +2,7 @@
   "name": "@deuscx/starter-vue-component",
   "type": "module",
   "version": "0.0.1",
-  "packageManager": "pnpm@8.10.5",
+  "packageManager": "pnpm@8.11.0",
   "description": "A simple starter template to build component library for vue3",
   "author": "deuscx",
   "license": "MIT",
@@ -58,25 +58,25 @@
   },
   "dependencies": {
     "@vueuse/core": "^10.6.1",
-    "vue": "^3.3.8"
+    "vue": "^3.3.9"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^1.2.1",
-    "@types/node": "^20.9.2",
-    "@unocss/eslint-config": "^0.57.5",
+    "@antfu/eslint-config": "^2.1.2",
+    "@types/node": "^20.10.1",
+    "@unocss/eslint-config": "^0.57.7",
     "@vitejs/plugin-vue": "^4.5.0",
     "@vitest/coverage-c8": "^0.33.0",
-    "@vue/test-utils": "^2.4.2",
+    "@vue/test-utils": "^2.4.3",
     "bumpp": "^9.2.0",
     "eslint": "^8.54.0",
     "jsdom": "^22.1.0",
     "lint-staged": "^15.1.0",
     "simple-git-hooks": "^2.9.0",
-    "typescript": "^5.2.2",
-    "unocss": "^0.57.5",
-    "vite": "^5.0.0",
+    "typescript": "^5.3.2",
+    "unocss": "^0.57.7",
+    "vite": "^5.0.4",
     "vitest": "^0.34.6",
-    "vue-tsc": "^1.8.22"
+    "vue-tsc": "^1.8.24"
   },
   "simple-git-hooks": {
     "pre-commit": "pnpm lint-staged"
