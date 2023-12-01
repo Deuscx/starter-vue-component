@@ -1,17 +1,15 @@
 {
   "compilerOptions": {
-    "target": "ESNext",
+    "target": "es2016",
     "jsx": "preserve",
-    "lib": [
-      "ESNext",
-      "DOM"
-    ],
+    "lib": ["DOM", "ESNext"],
     "useDefineForClassFields": true,
-    "emitDecoratorMetadata": true,
-    "experimentalDecorators": true,
     "baseUrl": ".",
-    "module": "ESNext",
-    "moduleResolution": "bundler",
+    "module": "esnext",
+    "moduleResolution": "node",
+    "paths": {
+      "~/*": ["src/*"]
+    },
     "resolveJsonModule": true,
     "types": [
       "vite/client"
@@ -21,12 +19,14 @@
     "strictNullChecks": true,
     "noUnusedLocals": true,
     "declaration": true,
-    "importHelpers": true,
+    "outDir": "dist/types",
     "sourceMap": true,
-    "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
+    "isolatedModules": true,
     "skipLibCheck": true
   },
+  "outDir": "dist/types",
+  "include": ["src", "./shims.d.ts", "./auto-imports.d.ts"],
   "exclude": ["dist", "node_modules", "eslint.config.js"]
 }
