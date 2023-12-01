@@ -51,7 +51,8 @@
     "test": "vitest",
     "coverage": "vitest run --coverage",
     "prepublishOnly": "nr build",
-    "release": "bumpp && npm publish"
+    "release": "bumpp && npm publish",
+    "postinstall": "npx simple-git-hooks"
   },
   "peerDependencies": {
     "vue": "^3.3.4"
@@ -74,6 +75,8 @@
     "simple-git-hooks": "^2.9.0",
     "typescript": "^5.3.2",
     "unocss": "^0.57.7",
+    "unplugin-auto-import": "^0.17.1",
+    "unplugin-vue-components": "^0.25.2",
     "vite": "^5.0.4",
     "vitest": "^0.34.6",
     "vue-tsc": "^1.8.24"
