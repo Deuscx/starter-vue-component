@@ -1,7 +1,7 @@
 {
   "name": "@deuscx/starter-vue-component",
   "type": "module",
-  "version": "0.0.0",
+  "version": "0.0.2-beta.1",
   "exports": {
     ".": {
       "import": "./dist/index.js",
