@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "composite": true,
     "target": "es2016",
     "jsx": "preserve",
     "lib": ["DOM", "ESNext"],
@@ -8,7 +9,7 @@
     "module": "esnext",
     "moduleResolution": "node",
     "paths": {
-      "~/*": ["src/*"]
+      "starter-vue-component/*": ["packages/ui/src/*"]
     },
     "resolveJsonModule": true,
     "types": [
@@ -19,14 +20,20 @@
     "strictNullChecks": true,
     "noUnusedLocals": true,
     "declaration": true,
-    "outDir": "dist/types",
     "sourceMap": true,
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
     "isolatedModules": true,
     "skipLibCheck": true
   },
-  "outDir": "dist/types",
-  "include": ["src", "./shims.d.ts", "./auto-imports.d.ts"],
-  "exclude": ["dist", "node_modules", "eslint.config.js"]
+  "exclude": [
+    "**/dist/**",
+    "**/node_modules/**",
+    "**/client/**",
+    "**/playground/**",
+    "**/examples/**",
+    "**/interactive/**",
+    "**/test/dts/**",
+    "eslint.config.js"
+  ]
 }

@@ -2,7 +2,7 @@
   "name": "@deuscx/starter-vue-component",
   "type": "module",
   "version": "0.0.1",
-  "packageManager": "pnpm@8.11.0",
+  "packageManager": "pnpm@10.7.0",
   "description": "A simple starter template to build component library for vue3",
   "author": "deuscx",
   "license": "MIT",
@@ -17,30 +17,9 @@
     "component",
     "ui"
   ],
-  "exports": {
-    ".": {
-      "import": "./dist/index.js",
-      "require": "./dist/index.umd.cjs"
-    },
-    "./*": "./*"
-  },
-  "main": "./dist/index.cjs",
-  "module": "./dist/index.js",
-  "types": "./dist/types/index.d.ts",
-  "typesVersions": {
-    "*": {
-      "*": [
-        "./dist/*",
-        "./dist/index.d.ts"
-      ]
-    }
-  },
-  "files": [
-    "dist"
-  ],
   "scripts": {
-    "dev": "vite ",
-    "build": "vite build && vue-tsc --emitDeclarationOnly",
+    "build": "pnpm -r --filter=./packages/* run build",
+    "play": "pnpm --filter playground dev",
     "preview": "vite preview",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
@@ -54,28 +33,28 @@
     "vue": "^3.3.4"
   },
   "dependencies": {
-    "@vueuse/core": "^11.0.3",
-    "vue": "^3.4.38"
+    "@vueuse/core": "^13.0.0",
+    "vue": "^3.5.13"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^2.27.1",
-    "@types/node": "^22.5.0",
-    "@unocss/eslint-config": "^0.62.3",
-    "@vitejs/plugin-vue": "^5.1.2",
+    "@antfu/eslint-config": "^4.11.0",
+    "@types/node": "^22.13.14",
+    "@unocss/eslint-config": "^66.0.0",
+    "@vitejs/plugin-vue": "^5.2.3",
     "@vitest/coverage-c8": "^0.33.0",
     "@vue/test-utils": "^2.4.6",
-    "bumpp": "^9.5.2",
-    "eslint": "^9.9.1",
-    "jsdom": "^24.1.1",
-    "lint-staged": "^15.2.9",
-    "simple-git-hooks": "^2.11.1",
-    "typescript": "^5.5.4",
-    "unocss": "^0.62.3",
-    "unplugin-auto-import": "^0.18.2",
-    "unplugin-vue-components": "^0.27.4",
-    "vite": "^5.4.2",
-    "vitest": "^2.0.5",
-    "vue-tsc": "^2.0.29"
+    "bumpp": "^10.1.0",
+    "eslint": "^9.23.0",
+    "jsdom": "^26.0.0",
+    "lint-staged": "^15.5.0",
+    "simple-git-hooks": "^2.12.1",
+    "typescript": "^5.8.2",
+    "unocss": "^66.0.0",
+    "unplugin-auto-import": "^19.1.2",
+    "unplugin-vue-components": "^28.4.1",
+    "vite": "^5.4.15",
+    "vitest": "^3.0.9",
+    "vue-tsc": "^2.2.8"
   },
   "simple-git-hooks": {
     "pre-commit": "pnpm lint-staged"
