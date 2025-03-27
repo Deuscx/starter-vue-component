@@ -26,7 +26,7 @@
     "lint:fix": "eslint . --fix",
     "test": "vitest",
     "coverage": "vitest run --coverage",
-    "prepublishOnly": "pnpm -r --filter=./packages-*/* run build",
+    "prepublishOnly": "npm run build",
     "release": "bumpp -r --excute=\"pnpm i\"",
     "publish": "pnpm -r publish --access public --no-git-checks",
     "postinstall": "npx simple-git-hooks"
