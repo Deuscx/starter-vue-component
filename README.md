@@ -1,4 +1,3 @@
-
 # starter-vue-component
 
 <!-- PROJECT LOGO -->
@@ -39,8 +38,6 @@ link to demo or gif link-->
 pnpm install starter-vue-component
 ```
 
-
-
 <!-- USAGE EXAMPLES -->
 ## Usage
 
@@ -51,13 +48,11 @@ import StarterVueComponent from 'starter-vue-component'
 import 'starter-vue-component/dist/index.css'
 ```
 
-
 <!-- ROADMAP -->
 ## Roadmap
 
 - [x] Add Changelog
 - [ ] Add back to top links
-
 
 See the [open issues](https://github.com/deuscx/starter-vue-component/issues) for a full list of proposed features (and known issues).
 
@@ -65,7 +60,6 @@ See the [open issues](https://github.com/deuscx/starter-vue-component/issues) fo
 ## License
 
 Distributed under the MIT License. See [LICENSE]('./LICENSE') for more information.
-
 
 [contributors-shield]: https://img.shields.io/github/contributors/deuscx/starter-vue-component.svg?style=for-the-badge
 [contributors-url]: https://github.com/deuscx/starter-vue-component/graphs/contributors
