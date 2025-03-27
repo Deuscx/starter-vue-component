@@ -1,7 +1,8 @@
 {
-  "name": "@deuscx/starter-vue-component",
+  "name": "library",
   "type": "module",
   "version": "0.0.1",
+  "private": true,
   "packageManager": "pnpm@10.7.0",
   "description": "A simple starter template to build component library for vue3",
   "author": "deuscx",

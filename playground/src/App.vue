@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import StarterVueComponent from 'starter-vue-component'
+import StarterVueComponent from '@deuscx/starter-vue-component'
 </script>
 
 <template>

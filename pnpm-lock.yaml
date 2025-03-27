@@ -72,7 +72,11 @@ importers:
 
   packages/ui: {}
 
-  playground: {}
+  playground:
+    dependencies:
+      '@deuscx/starter-vue-component':
+        specifier: workspace:*
+        version: link:..
 
 packages:
 

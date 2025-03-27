@@ -9,6 +9,6 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "starter-vue-component": "workspace:*"
+    "@deuscx/starter-vue-component": "workspace:*"
   }
 }
