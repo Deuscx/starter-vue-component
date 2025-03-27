@@ -25,8 +25,9 @@
     "lint:fix": "eslint . --fix",
     "test": "vitest",
     "coverage": "vitest run --coverage",
-    "prepublishOnly": "nr build",
-    "release": "bumpp && npm publish",
+    "prepublishOnly": "pnpm -r --filter=./packages-*/* run build",
+    "release": "bumpp -r --excute=\"pnpm i\"",
+    "publish": "pnpm -r publish --access public --no-git-checks",
     "postinstall": "npx simple-git-hooks"
   },
   "peerDependencies": {
