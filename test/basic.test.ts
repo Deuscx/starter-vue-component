@@ -1,6 +1,6 @@
+import Component from '@deuscx/starter-vue-component'
 import { mount } from '@vue/test-utils'
 import { describe, expect, it } from 'vitest'
-import Component from '../src/Component.vue'
 
 describe('component.vue', () => {
   it('should render', () => {
