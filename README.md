@@ -15,6 +15,7 @@
 </div>
 
 <!-- PROJECT SHIELDS -->
+
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
@@ -39,6 +40,7 @@ pnpm install starter-vue-component
 ```
 
 <!-- USAGE EXAMPLES -->
+
 ## Usage
 
 Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
@@ -49,6 +51,7 @@ import 'starter-vue-component/dist/index.css'
 ```
 
 <!-- ROADMAP -->
+
 ## Roadmap
 
 - [x] Add Changelog
@@ -57,6 +60,7 @@ import 'starter-vue-component/dist/index.css'
 See the [open issues](https://github.com/deuscx/starter-vue-component/issues) for a full list of proposed features (and known issues).
 
 <!-- LICENSE -->
+
 ## License
 
 Distributed under the MIT License. See [LICENSE]('./LICENSE') for more information.
