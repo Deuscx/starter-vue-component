@@ -1,4 +1,4 @@
-import type { Preset } from 'unocss/index'
+import type { Preset } from 'unocss'
 
 export function presetUnocss(): Preset {
   return {

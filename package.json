@@ -18,16 +18,6 @@
     "component",
     "ui"
   ],
-  "exports": {
-    ".": "./dist/index.js",
-    "./package.json": "./package.json"
-  },
-  "main": "./dist/index.js",
-  "module": "./dist/index.js",
-  "types": "./dist/index.d.ts",
-  "files": [
-    "dist"
-  ],
   "scripts": {
     "build": "pnpm -r --filter=./packages/* run build",
     "play": "pnpm --filter playground dev",
@@ -61,6 +51,7 @@
     "jsdom": "^28.0.0",
     "lint-staged": "^16.2.7",
     "simple-git-hooks": "^2.13.1",
+    "tsdown": "^0.20.3",
     "typescript": "^5.9.3",
     "unocss": "^66.6.0",
     "vite": "^7.3.1",

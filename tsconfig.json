@@ -5,9 +5,8 @@
     "jsx": "preserve",
     "lib": ["DOM", "ESNext"],
     "useDefineForClassFields": true,
-    "baseUrl": ".",
     "module": "esnext",
-    "moduleResolution": "node",
+    "moduleResolution": "Bundler",
     "paths": {
       "@deuscx/starter-vue-component": ["./packages/ui/src/"]
     },

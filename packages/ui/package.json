@@ -3,29 +3,25 @@
   "type": "module",
   "version": "0.0.2-beta.1",
   "exports": {
-    ".": {
-      "import": "./dist/index.js",
-      "require": "./dist/index.umd.cjs"
-    },
-    "./*": "./*"
+    ".": "./dist/index.js",
+    "./package.json": "./package.json"
   },
-  "main": "./dist/index.cjs",
+  "main": "./dist/index.js",
   "module": "./dist/index.js",
-  "types": "./dist/types/index.d.ts",
-  "typesVersions": {
-    "*": {
-      "*": [
-        "./dist/*",
-        "./dist/index.d.ts"
-      ]
-    }
-  },
+  "types": "./dist/index.d.ts",
   "files": [
     "dist"
   ],
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
-    "dev": "vite",
-    "build": "vite build && vue-tsc --emitDeclarationOnly",
+    "build": "tsdown",
+    "dev": "tsdown --watch",
     "preview": "vite preview"
+  },
+  "peerDependencies": {
+    "@vueuse/core": "^14.2.1",
+    "vue": "^3.0.0"
   }
 }
